@@ -94,6 +94,33 @@ $$
 
 ---
 
+## Gradient Descent
+
+<img width="1326" height="544" alt="image" src="https://github.com/user-attachments/assets/491e678e-e1fa-4498-89d1-250108781bdd" />
+
+---
+
+<img width="1324" height="626" alt="image" src="https://github.com/user-attachments/assets/94c5d28c-2dbf-467e-b72a-c57de16ec3a0" />
+
+
+1. **m=1: Stochastic Gradient Descent (SGD)**
+    - 데이터 샘플을 **하나씩** 뽑아서 매번 gradient 업데이트.
+    - 장점: 빠르고 online 학습 가능.
+    - 단점: 노이즈가 크고 수렴이 불안정할 수 있음.
+2. **1<m<N: Mini-batch SGD**
+    - 데이터 일부(minibatch)를 사용해 gradient 계산.
+    - **실무에서 가장 많이 사용**됨.
+    - 장점:
+        - 벡터 연산(병렬 처리) 덕분에 효율적.
+        - 노이즈가 줄어 수렴 안정적.
+    - mm 크기는 보통 32, 64, 128 등으로 설정.
+3. **m=N: Batch Gradient Descent**
+    - 전체 데이터셋으로 gradient 계산.
+    - 장점: gradient가 정확.
+    - 단점: **매 iteration 비용이 너무 큼** (특히 데이터가 크면 비효율적).
+    - 실무에서는 거의 안 쓰이고, 이론적인 기준점으로 주로 언급됨.
+
+---
 
 
 

@@ -29,4 +29,84 @@
 
 ---
 
+## Perceptron Learning Algorithm (PLA)
+
+<img width="1772" height="1121" alt="image" src="https://github.com/user-attachments/assets/c8007061-5817-4780-a8a8-d41119a578b7" />
+
+
+---
+
+## Formulation of Linear Regression
+
+<img width="2135" height="1067" alt="image" src="https://github.com/user-attachments/assets/ebec4d2e-6a70-40a9-b4a1-9b03e61821a5" />
+
+- MSE 식을 미분해서 0이 되는 지점을 찾는 방식
+
+---
+
+## Formulation of Logistic Regression
+
+<img width="1417" height="822" alt="image" src="https://github.com/user-attachments/assets/731816d1-d76c-46dd-936c-25fee587ef9e" />
+
+
+---
+
+### 1️⃣ Cross-Entropy Loss의 수식
+
+Logistic Regression에서 binary classification일 때 **loss**는 이렇게 정의됩니다:
+
+$$
+L(y, p) = - \Big( y \cdot \log(p) + (1-y) \cdot \log(1-p) \Big)
+$$
+
+* $y$: 실제 정답 (0 또는 1)
+* $p$: 모델이 출력한 "1일 확률" (sigmoid 출력, 0\~1 사이 값)
+
+---
+
+### 2️⃣ y=1일 때
+
+정답이 \*\*1(양성 클래스)\*\*라면:
+
+$$
+L = - \big( 1 \cdot \log(p) + 0 \cdot \log(1-p) \big) = - \log(p)
+$$
+
+* $p$가 1에 가까우면 → $-\log(p)$ ≈ 0 (loss 작음 ✅)
+* $p$가 0에 가까우면 → $-\log(p)$ → 무한대 (loss 큼 ❌)
+
+👉 즉, \*\*정답이 1일 때는 "p도 1이어야 한다"\*\*는 걸 강하게 유도.
+
+---
+
+### 3️⃣ y=0일 때
+
+정답이 \*\*0(음성 클래스)\*\*라면:
+
+$$
+L = - \big( 0 \cdot \log(p) + 1 \cdot \log(1-p) \big) = - \log(1-p)
+$$
+
+* $p$가 0에 가까우면 → $-\log(1-p)$ ≈ 0 (loss 작음 ✅)
+* $p$가 1에 가까우면 → $-\log(1-p)$ → 무한대 (loss 큼 ❌)
+
+👉 즉, \*\*정답이 0일 때는 "p도 0이어야 한다"\*\*는 걸 강하게 유도.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

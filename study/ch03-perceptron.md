@@ -122,6 +122,20 @@ $$
 
 ---
 
+## Backprogation(역전파)
+
+참고자료 - https://www.youtube.com/watch?v=1Q_etC_GHHk
+
+### forward pass
+
+<img width="1620" height="631" alt="image" src="https://github.com/user-attachments/assets/31d75b32-7825-4eca-af83-85271c7ae683" />
+
+### backward pass와 chain rules
+
+- 졸림이슈로 타이핑 대신.. 손필기 사진으로..
+
+<img width="3024" height="2608" alt="image" src="https://github.com/user-attachments/assets/bbdbe530-5e2c-4a7c-877a-59bbac96b002" />
+
 
 
 
